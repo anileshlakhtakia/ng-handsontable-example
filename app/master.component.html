@@ -1,0 +1,19 @@
+﻿<div style="margin-right:50px;float:left">
+    <hot-table [data]="newProduct"
+               [col-headers]="colHeaders"
+               [columns]="columns"
+               [options]="options"></hot-table>
+
+    <div>
+        <div>Selected Details info in master</div>
+        <div *ngFor="#detail of newProduct">
+            <label>{{detail.ProductDetailsId}}</label>
+            <label>{{detail.Name}}</label>
+            <label>{{detail.Description}}</label>
+            <label>{{detail.Type}}</label>
+        </div>
+    </div>
+</div>
+<div style="float:left">
+    <child></child>
+</div>
